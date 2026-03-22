@@ -1,8 +1,12 @@
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header"
 
 export default function Home() {
   return (
     <main>
-      <h1>IME JR</h1>
+      <Header />
+      <h1>#VemSerGigante</h1>
+      <Footer />
     </main>
   );
 }
