@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <h1>#VemSerGigante</h1>
       <Hero_Section />
       <Footer />
     </main>
