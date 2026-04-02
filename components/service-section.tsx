@@ -3,8 +3,8 @@ import { CoreService } from "@/components/core-service";
 export function ServiceSection() {
     return (
         <section className="select-none flex flex-col gap-7 items-center justify-center bg-[#0b0b0b] px-15 pb-10 sm:px-20">
-            <div className="w-full max-w-5xl">
-                <h2 className="text-3xl leading-tight tracking-tight">
+            <div className="w-full max-w-5xl flex justify-center md:justify-start">
+                <h2 className="text-3xl leading-tight tracking-tight text-start">
                     Serviços
                 </h2>
             </div>
