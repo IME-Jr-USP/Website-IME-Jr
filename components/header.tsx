@@ -1,44 +1,51 @@
 export function Header() {
     return (
-        //Navigation Bar
-        <nav className="flex justify-between w-full px-8 py-8 gap-4 bg-[#101010]">
-            {/*IME Jr*/}
-            <div className="flex font-['Gill_Sans_MT'] font-normal text-xl leading-[150%] flex items-center text-[#FFFFFF]">
-                IME Jr
+        <header
+            className="w-full bg-[#101010] px-4 py-4 text-white sm:px-6 md:px-8"
+        >
+            <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div className="text-lg font-semibold leading-tight sm:text-xl">IME Jr</div>
+                
+                <nav>
+                    <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-5 md:gap-7">
+                        <li>
+                            <a
+                                href="#"
+                                className="inline-flex rounded-sm px-1 py-1 text-base font-medium transition-colors duration-200 hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
+                            >
+                                Quem Somos
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="inline-flex rounded-sm px-1 py-1 text-base font-medium transition-colors duration-200 hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
+                            >
+                                Serviços
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="inline-flex rounded-sm px-1 py-1 text-base font-medium transition-colors duration-200 hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
+                            >
+                                Equipe
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.instagram.com/imejr.usp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center rounded-md border border-white px-3 py-1.5 text-base font-semibold transition-colors duration-200 hover:bg-white hover:text-[#101010] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
+                            >
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            {/*Items*/}
-            <div className="flex flex-row justify-end items-center p-0 gap-8">
-                {/*Quem Somos*/}
-                <a href="#"
-                target="_blank"
-                className="font-['Hind_Madurai'] font-normal text-xl font-medium leading-[150%] flex items-center text-white flex-none order-0 grow-0 hover:scale-[110%] transition-all duration-300"
-                >
-                    Quem Somos
-                </a>
-                {/*Serviços*/}
-                <a href="#"
-                target ="_blank"
-                className="font-['Hind_Madurai'] font-normal text-xl font-medium leading-[150%] flex items-center text-white flex-none order-1 grow-0 hover:scale-[110%] transition-all duration-300"
-                >
-                    Serviços
-                </a>
-                {/*Equipe*/}
-                <a href="#"
-                target ="_blank"
-                className="font-['Hind_Madurai'] font-normal text-xl font-medium leading-[150%] flex items-center text-white flex-none order-2 grow-0 hover:scale-[110%] transition-all duration-300"
-                >
-                    Equipe
-                </a>
-                {/*Instagram*/}
-                <a href="https://www.instagram.com/imejr.usp/"
-                target="_blank"
-                className="box-border flex flex-row justify-center items-center gap-8 px-2 py-2 bg-[#101010] border border-white shadow-[0px_1px_2px_rgba(0,0,0,0.05)] flex-none order-3 grow-0 hover:bg-white hover:text-black hover:scale-[110%] transition-all duration-300"
-                >
-                    <span className="font-['Hind_Madurai'] font-medium text-xl leading-[150%] text-inherit">
-                        Instagram
-                    </span>
-                </a>
-            </div>
-        </nav>
+        </header>
     );
 }
