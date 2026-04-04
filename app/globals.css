@@ -10,6 +10,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* CORES FIGMA */
+  --color-fundo-default: #101010;
+  --color-text-default: #ffffff;
+  --color-border-default: #5e5e5e;
+  --color-placeholder-default: #d9d9d9;
+  --color-azul-dados: #357ded;
+  --color-vermelho-comp: #d62839;
+  --color-amarelo-edu: #ffda33;
+  --color-transparente-dark: rgba(16, 16, 16, 0);
+
+  /* FONTES FIGMA */
+  --font-header: "imejr", sans-serif;
+  --font-titulo: "Gil Sans MT", sans-serif;
+  --font-corpo-pequeno: "Hind Madurai", sans-serif;
+  --font-newsletter: "Inter", sans-serif;
+  --font-card-funcionario: "M3 Label Large", sans-serif;
+  --font-fale-conosco: "Alegreya Sans SC", sans-serif;
+  --font-tabela: "Body Base", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
