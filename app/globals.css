@@ -23,7 +23,7 @@
 
   /* FONTES FIGMA */
   --font-header: "imejr", sans-serif;
-  --font-titulo: "Gil Sans MT", sans-serif;
+ --font-titulo: "Gil Sans", "Gil Sans MT", Calibri, sans-serif;
   --font-corpo-pequeno: "Hind Madurai", sans-serif;
   --font-newsletter: "Inter", sans-serif;
   --font-card-funcionario: "M3 Label Large", sans-serif;
@@ -39,7 +39,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* substitui o arial pelasvariáveis do figma */
+  background-color: var(--color-fundo-default);
+  color: var(--color-text-default);
+  font-family: var(--font-corpo-pequeno);
 }
